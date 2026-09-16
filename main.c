@@ -90,6 +90,23 @@ void mashq3(void){
 }
 
 
+struct Talaba {
+    char name[50];
+    int age;
+    double score;
+};
+
+void mashq4(void){
+
+    struct Talaba t1 = {"Eldorbek",14,5};
+
+    printf("\nTalaba ism:%s\nTalaba yoshi:%d\nTalaba baxosi:%.1f\n",t1.name,t1.age,t1.score);
+    
+    
+
+}
+
+
 
 int main(void)
 {
@@ -97,6 +114,7 @@ int main(void)
     mashq1();
     mashq2();
     mashq3();
+    mashq4();
 
     return 0;
 }
